@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007BFF;
+            color: rgb(226, 17, 17);
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">  
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" name="studentName" required />
+
+    <label for="matricNo">Matric No:</label>
+    <input type="text" id="matricNo" name="matricNo" required />
+
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+        <option value="" disabled selected>Select department</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Information Technology">Information Technology & Information Communication Technology
+        </option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Cybersecurity">Cybersecurity & Data science</option>
+        <option value="Information Systems">Information Systems</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="programme">Programme:</label>
+    <select id="programme" name="programme" required>
+        <option value="" disabled selected>Select programme</option>
+        <option value="Fulltime">Fulltime</option>
+        <option value="Weekdays">Weekdays</option>
+        <option value="Weekends">Weekends</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
